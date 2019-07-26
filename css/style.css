@@ -1,0 +1,304 @@
+body{
+    margin: 0;
+    background-color: #eeefef;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.section{
+    position: relative;
+    text-align: center;
+    background-color: #eeefef;
+}
+
+.section_title{
+    font-family: Helvetica;
+    display: inline-block;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.Top{
+    position: relative;
+}
+
+.Top_titleBox,
+.Top_detailBox{
+    position: absolute;
+    z-index: 10;
+}
+
+.Top_titleBox{
+    left: 20px;
+    top: 320px;
+}
+
+.Top_title{
+    font-size: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Top_subTitle{
+    font-family: Helvetica;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+.Top_detailBox{
+    text-align: left;
+    left: 20px;
+    top: 580px;
+}
+
+.Top_detailBox p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.Top_day{
+    letter-spacing: 0;
+    display: flex;
+    font-family: Helvetica;
+    font-size: 32px;
+}
+
+.Top_dayWeek{
+    font-size: 16px;
+    margin-left: 3px;
+    letter-spacing: .1em;
+}
+
+.Top_dayBetween{
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.Top_time{
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-bottom: 0 !important;
+}
+
+.Top_timeLast{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.Top_place{
+    font-size: 11px;
+    letter-spacing: .3em;
+}
+
+.Top_news{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+    padding: 3px;
+}
+
+.Top_backGround{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Top_personImgBox{
+    position: absolute;
+}
+
+.Top_personImgBox:nth-of-type(1){
+    top: 165px;
+    left: 45px;
+}
+
+.Top_personImgBox:nth-of-type(1) .Top_personImg{
+    height: 70px;
+}
+
+.Top_personImgBox:nth-of-type(2){
+    top: 167px;
+    left: 130px;
+}
+
+.Top_personImgBox:nth-of-type(2) .Top_personImg{
+    height: 68px;
+}
+
+.Top_personImgBox:nth-of-type(3){
+    top: 165px;
+    left: 204px;
+}
+
+.Top_personImgBox:nth-of-type(3) .Top_personImg{
+    height: 70px;
+}
+
+.Top_personImgBox:nth-of-type(4){
+    top: 165px;
+    left: 296px;
+}
+
+.Top_personImgBox:nth-of-type(4) .Top_personImg{
+    height: 70px;
+}
+
+.Top_personImgBox:nth-of-type(5){
+    top: 270px;
+    left: 35px;
+}
+
+.Top_personImgBox:nth-of-type(5) .Top_personImg{
+    height: 65px;
+}
+
+.Top_personImgBox:nth-of-type(6){
+    top: 267px;
+    left: 132px;
+}
+
+.Top_personImgBox:nth-of-type(6) .Top_personImg{
+    height: 68px;
+}
+
+.Top_personImgBox:nth-of-type(7){
+    top: 263px;
+    left: 212px;
+}
+
+.Top_personImgBox:nth-of-type(7) .Top_personImg{
+    height: 77px;
+}
+
+.Top_personImgBox:nth-of-type(8){
+    top: 266px;
+    left: 300px;
+}
+
+.Top_personImgBox:nth-of-type(8) .Top_personImg{
+    height: 75px;
+}
+
+.Top_personImgBox:nth-of-type(9){
+    top: 373px;
+    left: 212px;
+}
+
+.Top_personImgBox:nth-of-type(9) .Top_personImg{
+    height: 65px;
+}
+
+.Top_personImgBox:nth-of-type(10){
+    top: 366px;
+    left: 300px;
+}
+
+.Top_personImgBox:nth-of-type(10) .Top_personImg{
+    height: 75px;
+}
+
+.Top_personImgBox:nth-of-type(11){
+    top: 470px;
+    left: 43px;
+}
+
+.Top_personImgBox:nth-of-type(11) .Top_personImg{
+    height: 80px;
+}
+
+.Top_personImgBox:nth-of-type(12){
+    top: 470px;
+    left: 135px;
+}
+
+.Top_personImgBox:nth-of-type(12) .Top_personImg{
+    height: 80px;
+}
+
+.Top_personImgBox:nth-of-type(13){
+    top: 470px;
+    left: 218px;
+}
+
+.Top_personImgBox:nth-of-type(13) .Top_personImg{
+    height: 80px;
+}
+
+.Top_personImgBox:nth-of-type(14){
+    top: 474px;
+    left: 292px;
+}
+
+.Top_personImgBox:nth-of-type(14) .Top_personImg{
+    height: 77px;
+}
+
+
+
+
+
+.Access_map{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.Access_link{
+    color: #fff;
+    background-color: #1d2087;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.Access_trafficBox{
+    margin-top: 60px;
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Access_busBox,
+.Access_train{
+    font-size: 11px;
+}
+
+.Access_busBoxHead::before{
+    content: "<";
+}  
+
+.Access_busBoxHead::after{
+    content: ">";
+} 
+
+.Access_busBoxContent{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.ComingSoon{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
