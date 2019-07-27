@@ -18,7 +18,7 @@ function personImgInterval(){
 var i = 0;
 var iString;
 
-// var loaded = 0;
+var loaded = 0;
 
 function personImg(){
 	iString = String(i);
@@ -27,7 +27,7 @@ function personImg(){
 
 	if(i >= 15){
 		clearInterval(timer);
-		// loaded = 1;
+		loaded = 1;
 	}
 }
 
@@ -37,8 +37,8 @@ function titleScale(){
 	$(".Top_scrollBox").css("display","block");
 }
 
-// $(window).on('load resize', function(){
-// 	if(loaded == 1){
-// 		$(".Top_personImgBox").css("display","inline");
-// 	}
-// });
+$(window).on('load resize', function(){
+	if(loaded == 1){
+		$(".Top_personImgBox").css("display","inline");
+	}
+});
