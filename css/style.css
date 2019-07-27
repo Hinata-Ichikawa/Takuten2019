@@ -1,3 +1,7 @@
+p{
+    margin: 0;
+}
+
 body{
     margin: 0;
     background-color: #eeefef;
@@ -7,15 +11,22 @@ body{
 }
 
 .section{
+    z-index: 100;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; 
+    padding: 30px 10px 50px;
+    /* height: 100vh; */
     position: relative;
     text-align: center;
-    background-color: #eeefef;
+    background-color: rgba(248, 248, 248, 1);
+    border: rgb(209, 209, 209) 1px solid;
 }
 
 .section_title{
     font-family: Helvetica;
     display: inline-block;
-    margin-top: 70px;
     font-size: 20px;
 }
 
@@ -27,17 +38,29 @@ body{
 
 .Top{
     position: relative;
+    height: 100vh;
 }
 
 .Top_titleBox,
 .Top_detailBox{
-    position: absolute;
+    display: none;
+    position: fixed;
     z-index: 10;
+    animation: titleScale 1s;
+}
+
+@keyframes titleScale{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .Top_titleBox{
     left: 20px;
-    top: 320px;
+    top: 300px;
 }
 
 .Top_title{
@@ -55,7 +78,7 @@ body{
 .Top_detailBox{
     text-align: left;
     left: 20px;
-    top: 580px;
+    top: 560px;
 }
 
 .Top_detailBox p{
@@ -106,20 +129,98 @@ body{
 }
 
 .Top_backGround{
-    position: absolute;
-    top: -50px;
+    position: fixed;
+    top: -70px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh + 70px);
     width: 100vw;
+}
+
+#svg{
+    height: 100vh;
+}
+
+.st0{
+    fill: transparent;
+    stroke-dasharray: 2000;
+    stroke-width: 4;
+    animation: animYellow 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+  
+@keyframes animYellow {
+    0% {
+        fill: transparent;
+        stroke: #FFF000;
+        stroke-dashoffset: 2000;
+    }
+    80% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+        stroke: #FFF000;
+    }
+    100% {
+        stroke: none;
+        fill: #FFF000;
+    }
+}
+
+.st1{
+    fill: transparent;
+    stroke-dasharray: 2000;
+    stroke-width: 2;
+    animation: animBlue 2.5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+  
+@keyframes animBlue {
+    0% {
+        fill: transparent;
+        stroke: #1D2087;
+        stroke-dashoffset: 2000;
+    }
+    80% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+        stroke: #1D2087;
+    }
+    100% {
+        stroke: none;
+        fill: #1D2087;
+    }
+}
+
+.st2{
+    fill: transparent;
+    stroke-dasharray: 2000;
+    stroke-width: 2;
+    animation: animGray 3.5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+  
+@keyframes animGray {
+    0% {
+        fill: transparent;
+        stroke: #B4B4B5;
+        stroke-dashoffset: 2000;
+    }
+    50% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+        stroke: #B4B4B5;
+    }
+    100% {
+        stroke: none;
+        fill: #B4B4B5;
+    }
 }
 
 .Top_personImgBox{
     position: absolute;
+    display: none;
 }
 
 .Top_personImgBox:nth-of-type(1){
     top: 165px;
     left: 45px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(1) .Top_personImg{
@@ -129,6 +230,7 @@ body{
 .Top_personImgBox:nth-of-type(2){
     top: 167px;
     left: 130px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(2) .Top_personImg{
@@ -138,6 +240,7 @@ body{
 .Top_personImgBox:nth-of-type(3){
     top: 165px;
     left: 204px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(3) .Top_personImg{
@@ -147,6 +250,7 @@ body{
 .Top_personImgBox:nth-of-type(4){
     top: 165px;
     left: 296px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(4) .Top_personImg{
@@ -156,6 +260,7 @@ body{
 .Top_personImgBox:nth-of-type(5){
     top: 270px;
     left: 35px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(5) .Top_personImg{
@@ -165,6 +270,7 @@ body{
 .Top_personImgBox:nth-of-type(6){
     top: 267px;
     left: 132px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(6) .Top_personImg{
@@ -174,6 +280,7 @@ body{
 .Top_personImgBox:nth-of-type(7){
     top: 263px;
     left: 212px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(7) .Top_personImg{
@@ -183,6 +290,7 @@ body{
 .Top_personImgBox:nth-of-type(8){
     top: 266px;
     left: 300px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(8) .Top_personImg{
@@ -192,8 +300,9 @@ body{
 .Top_personImgBox:nth-of-type(9){
     top: 373px;
     left: 212px;
+    animation: personImg .5s;
 }
-
+    
 .Top_personImgBox:nth-of-type(9) .Top_personImg{
     height: 65px;
 }
@@ -201,6 +310,7 @@ body{
 .Top_personImgBox:nth-of-type(10){
     top: 366px;
     left: 300px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(10) .Top_personImg{
@@ -210,6 +320,7 @@ body{
 .Top_personImgBox:nth-of-type(11){
     top: 470px;
     left: 43px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(11) .Top_personImg{
@@ -219,6 +330,7 @@ body{
 .Top_personImgBox:nth-of-type(12){
     top: 470px;
     left: 135px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(12) .Top_personImg{
@@ -228,6 +340,7 @@ body{
 .Top_personImgBox:nth-of-type(13){
     top: 470px;
     left: 218px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(13) .Top_personImg{
@@ -237,11 +350,88 @@ body{
 .Top_personImgBox:nth-of-type(14){
     top: 474px;
     left: 292px;
+    animation: personImg .5s;
 }
 
 .Top_personImgBox:nth-of-type(14) .Top_personImg{
     height: 77px;
 }
+
+@keyframes personImg{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.Top_scrollBox{
+    display: none;
+    font-family: Helvetica;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: scroll 1s infinite;
+    text-align: center;
+}
+
+.Top_scrollText{
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.Top_scrollArrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-bottom: #000 1px solid;
+    border-right: #000 1px solid;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}   
+
+
+
+
+
+
+
+
+.About_text{
+    padding-left: 10px;
+    padding-right: 10px; 
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
