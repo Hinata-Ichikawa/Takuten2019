@@ -215,7 +215,6 @@ body{
 
 .Top_personImgBox{
     position: absolute;
-    display: none;
 }
 
 .Top_personImgBox:nth-of-type(1){
