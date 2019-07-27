@@ -60,7 +60,7 @@ body{
 
 .Top_titleBox{
     left: 20px;
-    top: 300px;
+    top: 260px;
 }
 
 .Top_title{
@@ -78,7 +78,7 @@ body{
 .Top_detailBox{
     text-align: left;
     left: 20px;
-    top: 560px;
+    bottom: 90px;
 }
 
 .Top_detailBox p{
@@ -90,7 +90,7 @@ body{
     letter-spacing: 0;
     display: flex;
     font-family: Helvetica;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .Top_dayWeek{
@@ -106,7 +106,7 @@ body{
 
 .Top_time{
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: px;
     margin-bottom: 0 !important;
 }
 
@@ -130,14 +130,15 @@ body{
 
 .Top_backGround{
     position: fixed;
-    top: -70px;
+    top: -100px;
     left: 0;
-    height: calc(100vh + 70px);
+    height: calc(100vh + 100px);
     width: 100vw;
 }
 
 #svg{
-    height: 100vh;
+    /* height: 100vh; */
+    width: 100%;
 }
 
 .st0{
